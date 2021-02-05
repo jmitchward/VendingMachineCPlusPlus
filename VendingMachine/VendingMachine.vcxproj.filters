@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\machineDAO">
+      <UniqueIdentifier>{2fee50e1-042a-43f7-80f1-f7c0842be597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\machineController">
+      <UniqueIdentifier>{34757969-0845-46d8-9d1a-414b45b77ad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\machineDTO">
+      <UniqueIdentifier>{0698c48c-19ff-44a2-bb37-bc11ff9a9ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\machineService">
+      <UniqueIdentifier>{aa5e0a30-0858-430f-b9be-4e53bd2806e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\machineView">
+      <UniqueIdentifier>{ad3f13a9-d11b-4eb8-822d-84e139d7f81a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\userInput">
+      <UniqueIdentifier>{1abb052f-780f-4b5c-8427-3e861fc21a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\userInput">
+      <UniqueIdentifier>{7769dce9-fa82-4de0-8760-59f6cd591374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\machineDTO">
+      <UniqueIdentifier>{2347787e-9aa0-4e97-b1f4-b73b4fee4f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\machineDAO">
+      <UniqueIdentifier>{b5281cc1-4afc-4441-b44b-8c4f5a7be43a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\machineView">
+      <UniqueIdentifier>{e3b2a2f2-7bb1-4938-bb36-cdb24b080f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\machineController">
+      <UniqueIdentifier>{64556bce-c5fe-495e-af13-df7dc6268c0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\machineService">
+      <UniqueIdentifier>{bdab7a31-88f8-4896-9396-bb4db16b932e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VendingMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="machineInput.cpp">
+      <Filter>Source Files\userInput</Filter>
+    </ClCompile>
+    <ClCompile Include="machineItem.cpp">
+      <Filter>Source Files\machineDTO</Filter>
+    </ClCompile>
+    <ClCompile Include="machineView.cpp">
+      <Filter>Source Files\machineView</Filter>
+    </ClCompile>
+    <ClCompile Include="machineDAO.cpp">
+      <Filter>Source Files\machineDAO</Filter>
+    </ClCompile>
+    <ClCompile Include="machineController.cpp">
+      <Filter>Source Files\machineController</Filter>
+    </ClCompile>
+    <ClCompile Include="machineService.cpp">
+      <Filter>Source Files\machineService</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="machineInput.h">
+      <Filter>Header Files\userInput</Filter>
+    </ClInclude>
+    <ClInclude Include="userIO.h">
+      <Filter>Header Files\userInput</Filter>
+    </ClInclude>
+    <ClInclude Include="machineItem.h">
+      <Filter>Header Files\machineDTO</Filter>
+    </ClInclude>
+    <ClInclude Include="machineView.h">
+      <Filter>Header Files\machineView</Filter>
+    </ClInclude>
+    <ClInclude Include="abstractMachineDAO.h">
+      <Filter>Header Files\machineDAO</Filter>
+    </ClInclude>
+    <ClInclude Include="machineDAO.h">
+      <Filter>Header Files\machineDAO</Filter>
+    </ClInclude>
+    <ClInclude Include="machineController.h">
+      <Filter>Header Files\machineController</Filter>
+    </ClInclude>
+    <ClInclude Include="machineService.h">
+      <Filter>Header Files\machineService</Filter>
+    </ClInclude>
+    <ClInclude Include="abstractMachineService.h">
+      <Filter>Header Files\machineService</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
