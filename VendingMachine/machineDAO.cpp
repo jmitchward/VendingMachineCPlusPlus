@@ -7,9 +7,19 @@ machineItem machineDAO::addItem(machineItem item) {
 }
 
 std::string machineDAO::newId() {
-	char id[3];
-	sprintf_s(id, "00%d", nextId+1);
-	return id;
+	std::stringstream newId;
+	std::string appendee;
+	if (nextId <= 9) {
+		appendee = "00";
+	}
+	else if (nextId <= 99) {
+		appendee = "0";
+	}
+	else {
+		appendee = "";
+	}
+	newId << appendee << std::to_string(nextId);
+	return newId.str();
 }
 
 void machineDAO::updateStock(std::string itemId) {
@@ -17,12 +27,11 @@ void machineDAO::updateStock(std::string itemId) {
 }
 
 machineItem* machineDAO::getItem(std::string itemId) {
-	std::optional<machineItem> foundItem = inventory.at(itemId);
-	if (foundItem.has_value()) {
-		return &inventory.at(itemId);
+	if (inventory.find(itemId) == inventory.end()) {
+		return nullptr;
 	}
 	else {
-		return nullptr;
+		return &inventory.at(itemId);
 	}
 }
 

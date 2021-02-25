@@ -59,7 +59,7 @@ void machineController::enterMoney() {
 void machineController::exitChain() {
 	view.displayExit();
 	service.exitCascade();
-
+	exit(0);
 }
 
 void machineController::insertItems() {

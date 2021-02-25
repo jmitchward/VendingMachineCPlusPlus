@@ -68,7 +68,13 @@ double machineService::checkTotal() {
 }
 
 void machineService::setTotal(double total) {
-	userTotal = total;
+	if (userTotal != 0) {
+		userTotal = userTotal + total;
+	}
+	else {
+		userTotal = total;
+	}
+
 }
 
 std::vector<int> machineService::returnChange() {
