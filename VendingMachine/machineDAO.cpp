@@ -1,7 +1,7 @@
 #include "machineDAO.h"
 
 
-machineItem machineDAO::addItem(machineItem item) {
+machineItem machineDAO::addItem(machineItem& item) {
 	inventory.insert(std::make_pair(item.getItemId(), item));
 	return item;
 }
@@ -22,7 +22,7 @@ std::string machineDAO::newId() {
 	return newId.str();
 }
 
-void machineDAO::updateStock(std::string itemId) {
+void machineDAO::updateStock(std::string& itemId) {
 	inventory.at(itemId).setStock(inventory.at(itemId).getStock() - 1);
 }
 

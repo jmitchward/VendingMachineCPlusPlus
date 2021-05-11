@@ -4,12 +4,12 @@ machineService::machineService() {
 
 }
 
-machineService::machineService(machineDAO dao) {
+machineService::machineService(machineDAO& dao) {
 	this->dao = dao;
 	this->userTotal = NULL;
 }
 
-machineItem machineService::purchaseItem(std::string itemId) {
+machineItem machineService::purchaseItem(std::string& itemId) {
 	if (this->userTotal == NULL) {
 		throw 0;
 	}
@@ -26,7 +26,7 @@ machineItem machineService::purchaseItem(std::string itemId) {
 	}
 }
 
-void machineService::addItem(machineItem item) {
+void machineService::addItem(machineItem& item) {
 	if (dao.getItem(item.getItemId()) != nullptr) {
 		throw 0;
 	}
@@ -40,7 +40,7 @@ std::string machineService::requestId() {
 	return dao.newId();
 }
 
-void machineService::validateAdminAdd(machineItem item) {
+void machineService::validateAdminAdd(machineItem& item) {
 	if (item.getName() == ""
 		|| item.getStock() == 0
 		|| item.getCost() == 0
@@ -59,7 +59,7 @@ std::vector<machineItem> machineService::displayItems() {
 	return itemsInStock;
 }
 
-machineItem machineService::getItem(std::string itemId) {
+machineItem machineService::getItem(std::string& itemId) {
 	return *dao.getItem(itemId);
 }
 
